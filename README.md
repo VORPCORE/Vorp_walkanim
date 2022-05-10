@@ -7,3 +7,7 @@
 - add `ensure Vorp_walkanim` to resources.cfg
 - run the sql file
 - have fun
+
+
+# TODO
+- add menuapi instead of warmenu
