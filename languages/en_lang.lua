@@ -6,6 +6,7 @@ Locales["en_lang"] = {
     SubMenuTitle = "submenu",
     Crazy = "Crazy Style",
     Casual = "Casual Style",
+    Drunk = "Drunk Style",
     EasyRider = "Easy Rider Style",
     Flamboyant = "FLamboyant Style",
     Greenhorn = "Greenhorn Style",
