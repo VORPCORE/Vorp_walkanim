@@ -2,7 +2,6 @@
 ---------------------------------- ENGLISH -------------------------------------------
 
 Locales["en_lang"] = {
-
     MenuTitle = "WALK STYLE",
     SubMenuTitle = "submenu",
     Crazy = "Crazy Style",
@@ -17,6 +16,6 @@ Locales["en_lang"] = {
     Veteran = "Veteran Style",
     RemoveWalk = "Remove Style",
     removedesc = "Deafault Style",
-    chooseAnim = " Choose a style it will save"
+    chooseAnim = "Choose a style it will save"
 
 }
