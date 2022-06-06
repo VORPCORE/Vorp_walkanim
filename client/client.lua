@@ -1,6 +1,4 @@
 local isInMenu = false
-
-
 MenuData = {}
 
 TriggerEvent("menuapi:getData", function(call)
@@ -109,5 +107,24 @@ RegisterCommand(Config.command, function()
     if isInMenu == false then
         OpenMenu()
         DisplayRadar(false)
+        Citizen.InvokeNative(0x433083750C5E064A, PlayerPedId(), 1)
+    end
+end)
+
+Command = false
+
+RegisterCommand(Config.slowWalkCommand, function()
+
+    if not Command then
+        Command = true
+        while Command do
+            Citizen.Wait(15)
+            SetPedMaxMoveBlendRatio(PlayerPedId(), 0.2)
+
+        end
+    else
+        Command = false
+        SetPedMaxMoveBlendRatio(PlayerPedId(), 3.0)
+
     end
 end)
