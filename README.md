@@ -1,6 +1,8 @@
 # Vorp_walkanim
  
  A script that saves players walking style at every server restart
+ - now it uses clothing too
+ - remove or add back the clothing
 
 # Installation
 
