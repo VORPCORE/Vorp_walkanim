@@ -107,7 +107,7 @@ RegisterCommand(Config.command, function()
     if isInMenu == false then
         OpenMenu()
         DisplayRadar(false)
-        Citizen.InvokeNative(0x433083750C5E064A, PlayerPedId(), 1)
+        
 
     end
 end)
