@@ -100,7 +100,7 @@ AddEventHandler("onResourceStart", function(resourceName)
     end
 end)
 
-TriggerEvent("chat:addSuggestion", "/" .. Config.command, "VORPWalk style command to open walk style menu", {})
+TriggerEvent("chat:addSuggestion", "/" .. Config.command, Config.walkanimsuggestion, {})
 
 RegisterCommand(Config.command, function()
 
@@ -108,11 +108,14 @@ RegisterCommand(Config.command, function()
         OpenMenu()
         DisplayRadar(false)
         Citizen.InvokeNative(0x433083750C5E064A, PlayerPedId(), 1)
+
     end
 end)
 
 Command = false
 
+
+TriggerEvent("chat:addSuggestion", "/" .. Config.slowWalkCommand, Config.slowcommandSuggestion, {})
 RegisterCommand(Config.slowWalkCommand, function()
 
     if not Command then
