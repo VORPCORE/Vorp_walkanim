@@ -181,6 +181,11 @@ AddEventHandler("vorp_walkanim:setAnim", function(animation)
     TriggerServerEvent("vorp_walkanim:setwalk", animation)
 end)
 
+RegisterNetEvent("vorp:SelectedCharacter")
+AddEventHandler("vorp:SelectedCharacter", function(charid)
+    TriggerServerEvent("vorp_walkanim:getwalk")
+end)
+
 AddEventHandler("onResourceStart", function(resourceName)
     if resourceName == GetCurrentResourceName() then
         Wait(10000)
